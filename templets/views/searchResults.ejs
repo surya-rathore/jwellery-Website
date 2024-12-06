@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <section class="containar1">
+        <div class="navbar1">
+            <div class="logo">
+                <img src="./main_img/logo jai.jpg" alt="logo">
+            </div>
+            <div class="search">
+                <form action="/index" method="POST">
+                    <input type="text" name="search" id="searchbar"
+                        placeholder="Search for Gold Jewellery, Diamond Jewellery and More.....">
+                </form>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">sign up</a></li>
+                    <li><a href="#">card</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar2">
+            <ul>
+                <li><a href="./">All Jewellery</a></li>
+                <li><a href="gold">Gold</a></li>
+                <li><a href="daimand">Diamond</a></li>
+                <li><a href="errings">Earring</a></li>
+                <li><a href="rings">Ring</a></li>
+                <li><a href="collection">Collection</a></li>
+                <li><a href="wedding">Wedding</a></li>
+                <li><a href="gifting">Gifting</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end of navbar section -->
+    <!-- home -->
+      <section>
+        <div class="main" id="image-container">
+            {{#each results}}
+                <div class="image-box">
+                    <img id="search_img" src="{{this.img}}" alt="Image">
+                </div>
+            {{/each}}
+        </div>
+    </section>
+    <!-- end home-->
+    <section>
+        <div class="footer">
+            <div class="Useful_Links">
+                <h2>Useful Links</h2><br>
+                <ul>
+                    <li><a href="#">Delivery Information</a></li><br>
+                    <li><a href="#">International Shipping</a></li><br>
+                    <li><a href="#">Payment Options</a></li><br>
+                    <li><a href="#">Track your Order</a></li><br>
+                    <li><a href="#">Returns</a></li><br>
+                    <li><a href="#">Find a Store</a></li><br>
+                </ul>
+            </div>
+            <div class="Introduction">
+                <h2>Information</h2><br>
+                <ul>
+                    <li><a href="#">Careers</a></li><br>
+                    <li><a href="#">Blog</a></li><br>
+                    <li><a href="#">Offers & Contest Details</a></li><br>
+                    <li><a href="#">Help & FAQs</a></li><br>
+                    <li><a href="#">About Us</a></li><br>
+                </ul>
+            </div>
+            <div class="Social_Media">
+                <h2>Follow Us</h2><br>
+                <ul>
+                    <li><a href="#">Facebook</a></li><br>
+                    <li><a href="#">Twitter</a></li><br>
+                    <li><a href="#">Instagram</a></li><br>
+                    <li><a href="#">YouTube</a></li><br>
+                    <li><a href="#">LinkedIn</a></li><br>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
